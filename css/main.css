@@ -1,0 +1,437 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  color:  #ffffff;
+  font-size: 200px;
+  line-height: 180px;
+  letter-spacing: -13px;
+  word-spacing: 15px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color:  #2a2d2e;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+h3 {
+  color:  #ffffff;
+  margin-top: 30px;
+  margin-bottom: 27px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:  #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h5 {
+  margin: 0;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:  #2a2d2e;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+p {
+  color:  #72787a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.about-section,
+.portfolio-section,
+.pricing-section,
+.contact-section,
+.main-footer {
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100%;
+  max-width: 1920px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color:  #ffffff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color:  rgba(255, 255, 255, 0);
+  width: 190px;
+  height: 64px;
+  color:  #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #7443ff;
+  border-color: #7443ff;
+  color: #fff;
+}
+
+.btn-dark {
+  color: #2a2d2e;
+  border-color: #2a2d2e;
+}
+
+.main-header {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282b30;
+  background-image: url('../img/header-bg.png');
+  background-size: cover;
+}
+
+.main-header .main-nav {
+  display: none;
+}
+
+.main-header .logo-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  box-sizing: border-box;
+  height: auto;
+  margin-top: 40px;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.main-header .logo-menu-wrap .menu {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.main-header .logo-menu-wrap .menu .menu-line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.main-header .header-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 270px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+.main-header .header-content-wrap .arw-down {
+  margin-top: 311px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.main-header .header-content-wrap .arw-down:hover {
+  border-color: #7443ff;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+.about-section h6 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.about-section .fst-rgt-side,
+.about-section .scnd-lft-side {
+  width: 38%;
+}
+
+.about-section .fst-lft-side,
+.about-section .scnd-rgt-side {
+  width: 62%;
+}
+
+
+
+.portfolio-section {
+  padding-left: 138px;
+  padding-right: 138px;
+  margin-top: 95px;
+  padding-bottom: 150px;
+}
+
+.portfolio-section .portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.portfolio-section .portfolio-nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #818586;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.portfolio-section .portfolio-nav a:hover {
+  color: #2a2d2e;
+}
+
+.portfolio-section .portfolio-nav a.active {
+  color: #2a2d2e;
+}
+
+.portfolio-section .portfolio-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap:nth-child(3),
+.portfolio-section .portfolio-wrap .portfolio-block-wrap:nth-child(5) {
+  width: 25%;
+  padding: 0;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap .portfolio-block {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap:nth-child(2) .portfolio-block {
+  padding-top: 50%;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap:nth-child(3) .portfolio-block {
+  padding-top: 200%;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap .portfolio-block .portfolio-content-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #7443ff;
+  margin: 12px;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap .portfolio-block .portfolio-content-wrap .content-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-section .portfolio-wrap .portfolio-block-wrap .portfolio-block .portfolio-content-wrap .portfolio-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 63px;
+  box-sizing: border-box;
+  background-image: url('../img/gradient.png');
+}
+
+.portfolio-section .btn-wrap {
+  padding-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-section {
+  padding-top: 135px;
+  padding-bottom: 185px;
+  background-color: #202129;
+  color: #fff;
+}
+
+.pricing-section h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-section h6 {
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-section .all-projects-wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.pricing-section .all-projects-wrap .project-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing-section .all-projects-wrap .project-wrap .img-wrap {
+  padding: 10px;
+}
+
+.pricing-section .all-projects-wrap .project-wrap h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pricing-section .all-projects-wrap .project-wrap .project-features {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.pricing-section .all-projects-wrap .project-wrap .project-features li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.pricing-section .all-projects-wrap .project-wrap .project-features li:last-child {
+  margin-bottom: 30px;
+}
+
+.contact-section {
+  padding-top: 120px;
+  padding-bottom: 135px;
+}
+
+.contact-section .info-form-wrap {
+  display: flex;
+}
+
+.contact-section .info-form-wrap .lft-block {
+  width: 50%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+.contact-section .info-form-wrap .lft-block .tranmautritam {
+  color:  #7443ff;
+  padding-left: 20px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact-section .info-form-wrap .lft-block .tranmautritam:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  background-color:  #7443ff;
+  width: 2px;
+  height: 18px;
+}
+
+.contact-section .info-form-wrap .lft-block h6 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-section .form-wrap {
+  width: 50%;
+}
+
+.contact-section .form-wrap .group {
+  position: relative;
+  width: 470px;
+  margin-bottom: 20px;
+}
+
+.contact-section .form-wrap .group input {
+	font-size: 14px;
+  color:  #2a2d2e;
+  font-weight: bold;
+	padding: 30px 30px 30px 0px;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+.contact-section .form-wrap .group input::-webkit-input-placeholder,
+.contact-section .form-wrap .group input:-ms-input-placeholder,
+.contact-section .form-wrap .group input::-moz-placeholder {
+	font-weight: lighter;
+}
+
+.contact-section .form-wrap .group input:focus {
+  outline: none;
+}
+
+.contact-section .form-wrap .group label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0px;
+	top: 30px;
+	transition: all 0.2s ease;
+  display: none;
+}
+
+.contact-section .form-wrap .group input:focus ~ label,
+.contact-section .form-wrap .group input.used ~ label {
+	top: -20px;
+  transform: scale(.75); left: -2px;
+	color: #4a89dc;
+}
