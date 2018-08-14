@@ -519,6 +519,13 @@
 		margin-right: auto;
 	}
 
+	.blog-section .social-block p {
+		font-size: 8px;
+		bottom: -2px;
+		text-align: center;
+		opacity: 1;
+	}
+
 	.main-footer .lft-rgt-wrap {
 		padding-bottom: 20px;
 	}
