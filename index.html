@@ -25,15 +25,18 @@
 	<header class="main-header">
 		<nav class="main-nav">
 			<div class="close-nav-wrap">
-
+				<div class="close-btn">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 			</div>
 			<div class="nav">
-      	<div><a href="#">Home</a></div>
-      	<div><a href="#">About</a></div>
-      	<div><a href="#">Portfolio</a></div>
-				<div><a href="#">Services</a></div>
-				<div><a href="#">Blog</a></div>
-				<div><a href="#">Contact</a></div>
+      	<div><a href="#home">Home</a></div>
+      	<div><a href="#about">About</a></div>
+      	<div><a href="#portfolio">Portfolio</a></div>
+				<div><a href="#services">Services</a></div>
+				<div><a href="#blog">Blog</a></div>
+				<div><a href="#contact">Contact</a></div>
 				<div class="social-links-wrap">
 					<a href="#"><i class="fab fa-twitter"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
@@ -56,35 +59,80 @@
 			<h1>I am Cesis</h1>
 			<h3>Let's make your website Great Again!</h3>
 			<a href="#" class="btn">View portfolio</a>
-			<a href="#" class="arw-down"></a>
+			<a href="#about" class="arw-down"></a>
 		</div>
 	</header>
 
-	<section class="about-section">
-		<div class="fst-rgt-side">
-			<h2>Let's make your design great again</h2>
-			<h6>I build identities and experiences to elevate & empower organizations.</h6>
-			<a href="#" class="btn btn-dark">Get in touch</a>
-		</div>
-		<div class="fst-lft-side">
-			<img src="" alt="">
+	<section class="about-section" id="about">
+		<div class="about-wrap fst">
+			<div class="text-wrap">
+				<h2>Let's make your design great again</h2>
+				<h6>I build identities and experiences to elevate & empower organizations.</h6>
+				<a href="#" class="btn btn-dark">Get in touch</a>
+			</div>
+			<div class="img-wrap">
+				<img src="img/about-img1.jpg" alt="" class="about-img">
+				<div class="img-advanced">
+					<div class="logo-text">
+						<img src="img/main-logo.png" alt="Cesis Logo" class="main-logo">
+						<span>reative</span>
+					</div>
+					<div class="gradiant-wrap">
+						<div class="block"></div>
+						<div class="block">
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="block"></div>
+						<div class="block"></div>
+					</div>
 
+					<div class="block-wrap">
+						<div class="block"></div>
+						<div class="block"></div>
+						<div class="block"></div>
+						<div class="block"></div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="scnd-rgt-side">
-			<img src="" alt="">
 
-		</div>
-		<div class="scnd-lft-side">
-			<h2>Who I am?</h2>
-			<h6>I build identities and experiences to elevate & empower organizations.</h6>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-			<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim</p>
-			<a href="#" class="btn btn-dark">About me</a>
+		<div class="about-wrap scnd">
+			<div class="img-wrap">
+				<img src="img/about-img2.jpg" alt="" class="about-img">
+				<div class="img-advanced">
+					<div class="play-btn">
+						<img src="img/play.png" alt="">
+					</div>
+					<div class="text">video</div>
+					<div class="gradiant-wrap">
+						<div class="block"></div>
+						<div class="block"></div>
+						<div class="block">
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="block"></div>
+					</div>
+					<div class="empty-block"></div>
+					<div class="block-with-img">
+						<img src="img/elements.png" alt="">
+					</div>
+
+				</div>
+			</div>
+			<div class="text-wrap">
+				<h2>Who I am?</h2>
+				<h6>I build identities and experiences to elevate & empower organizations.</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+				<p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim</p>
+				<a href="#" class="btn btn-dark">About me</a>
+			</div>
 		</div>
 	</section>
 
-	<section class="portfolio-section">
-		<nav class="portfolio-nav">
+	<section class="portfolio-section" id="portfolio">
+		<nav class="portfolio-nav desktop">
 			<a href="#" class="active">All</a>
 			<a href="#">Web Design</a>
 			<a href="#">Interaction</a>
@@ -93,14 +141,29 @@
 			<a href="#">Graphic Design</a>
 			<a href="#">Photography</a>
 		</nav>
+		<nav class="portfolio-nav mobile">
+			<select name="select" id="select">
+				<option>All</option>
+				<option>Web Design</option>
+				<option>Interaction</option>
+				<option>Branding</option>
+				<option>Graphic Design</option>
+				<option>Photography</option>
+			</select>
+			<div class="select-arw"></div>
+			<span class="focus-border"></span>
+		</nav>
 		<div class="portfolio-wrap">
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port1.png" alt="" class="content-photo">
+						<img src="img/port1.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Photography</h5>
-							<h4>Canon Microless Pack</h4>
+							<div class="h5-h4-wrap">
+								<h5>Photography</h5>
+								<h4>Canon Microless Pack</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -109,32 +172,26 @@
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port2.png" alt="" class="content-photo">
+						<img src="img/port2.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Branding</h5>
-							<h4>Noth Oxford Logo Design</h4>
+							<div class="h5-h4-wrap">
+								<h5>Branding</h5>
+								<h4>Noth Oxford Logo Design</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port3.png" alt="" class="content-photo">
+						<img src="img/port3.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Applications</h5>
-							<h4>Noth Oxford Gymnastic</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="portfolio-block-wrap">
-				<div class="portfolio-block">
-					<div class="portfolio-content-wrap">
-						<img src="img/port4.png" alt="" class="content-photo">
-						<div class="portfolio-content">
-							<h5>Web Design</h5>
-							<h4>Cesis Fashion</h4>
+							<div class="h5-h4-wrap">
+								<h5>Applications</h5>
+								<h4>Noth Oxford Gymnastic</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -143,10 +200,13 @@
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port5.png" alt="" class="content-photo">
+						<img src="img/port4.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Branding</h5>
-							<h4>Kinfolk Brochure</h4>
+							<div class="h5-h4-wrap">
+								<h5>Web Design</h5>
+								<h4>Cesis Fashion</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -155,20 +215,13 @@
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port6.png" alt="" class="content-photo">
+						<img src="img/port5.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Photography</h5>
-							<h4>Creative Design</h4>
-						</div>
-					</div>
-				</div>
-
-				<div class="portfolio-block">
-					<div class="portfolio-content-wrap">
-						<img src="img/port7.png" alt="" class="content-photo">
-						<div class="portfolio-content">
-							<h5>Interaction</h5>
-							<h4>Cesis Fashion</h4>
+							<div class="h5-h4-wrap">
+								<h5>Branding</h5>
+								<h4>Kinfolk Brochure</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -177,10 +230,26 @@
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port8.png" alt="" class="content-photo">
+						<img src="img/port6.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Photography</h5>
-							<h4>Crazy Fashion</h4>
+							<div class="h5-h4-wrap">
+								<h5>Photography</h5>
+								<h4>Creative Design</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-block">
+					<div class="portfolio-content-wrap">
+						<img src="img/port7.jpg" alt="" class="content-photo">
+						<div class="portfolio-content">
+							<div class="h5-h4-wrap">
+								<h5>Interaction</h5>
+								<h4>Cesis Fashion</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -189,10 +258,28 @@
 			<div class="portfolio-block-wrap">
 				<div class="portfolio-block">
 					<div class="portfolio-content-wrap">
-						<img src="img/port9.png" alt="" class="content-photo">
+						<img src="img/port8.jpg" alt="" class="content-photo">
 						<div class="portfolio-content">
-							<h5>Branding</h5>
-							<h4>Don't Just Stand There</h4>
+							<div class="h5-h4-wrap">
+								<h5>Photography</h5>
+								<h4>Crazy Fashion</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-block-wrap">
+				<div class="portfolio-block">
+					<div class="portfolio-content-wrap">
+						<img src="img/port9.jpg" alt="" class="content-photo">
+						<div class="portfolio-content">
+							<div class="h5-h4-wrap">
+								<h5>Branding</h5>
+								<h4>Don't Just Stand There</h4>
+							</div>
+							<a href="#" class="tap-to">Tap to view</a>
 						</div>
 					</div>
 				</div>
@@ -204,7 +291,7 @@
 		</div>
 	</section>
 
-	<section class="pricing-section">
+	<section class="pricing-section" id="services">
 		<h2>Select your plans</h2>
 		<h6>Creating a website has never beent this easy with Cesis Theme</h6>
 		<div class="all-projects-wrap">
@@ -215,11 +302,11 @@
 				<h4>Personal Project</h4>
 				<ul class="project-features">
 					<li>Logo Design</li>
-					<li>Brochure Template</li>
+					<li class="removed">Brochure Template</li>
 					<li>Web Design</li>
-					<li>WordPress Development</li>
-					<li>Behance Presentation</li>
-					<li>Dribble Shots</li>
+					<li class="removed">WordPress Development</li>
+					<li class="removed">Behance Presentation</li>
+					<li class="removed">Dribble Shots</li>
 					<li>6 Revisions</li>
 					<li>Live-chat Support</li>
 				</ul>
@@ -236,8 +323,8 @@
 					<li>Brochure Template</li>
 					<li>Web Design</li>
 					<li>WordPress Development</li>
-					<li>Behance Presentation</li>
-					<li>Dribble Shots</li>
+					<li class="removed">Behance Presentation</li>
+					<li class="removed">Dribble Shots</li>
 					<li>6 Revisions</li>
 					<li>Live-chat Support</li>
 				</ul>
@@ -264,7 +351,7 @@
 		</div>
 	</section>
 
-	<section class="contact-section">
+	<section class="contact-section" id="contact">
 		<div class="info-form-wrap">
 			<div class="lft-block">
 				<h4 class="tranmautritam">Tranmautritam</h4>
@@ -277,17 +364,43 @@
 				<form>
 				  <div class="group">
 				    <input type="text" placeholder="Your Name">
-				    <label></label>
+				    <label><i class="fas fa-user-alt"></i></label>
+						<span class="focus-border"></span>
 				  </div>
 					<div class="group">
 				    <input type="email" placeholder="Email">
-				    <label></label>
+				    <label><i class="fas fa-envelope"></i></label>
+						<span class="focus-border"></span>
 				  </div>
 					<div class="group">
 				    <input type="phone" placeholder="Phone">
-				    <label></label>
+				    <label><i class="fas fa-phone"></i></label>
+						<span class="focus-border"></span>
 				  </div>
-				  <submit class="btn btn-dark">Keep in touch</submit>
+					<div class="group">
+				    <input type="adress" placeholder="Adress">
+				    <label><i class="fas fa-building"></i></label>
+						<span class="focus-border"></span>
+				  </div>
+					<div class="group">
+						<select name="select" id="select">
+				      <option>What are you looking for?</option>
+				      <option value="1">Design</option>
+				      <option value="2">Photography</option>
+				      <option value="3">Undefined</option>
+				    </select>
+						<div class="select-arw"></div>
+						<span class="focus-border"></span>
+					</div>
+					<div class="check-wrap">
+					  <input type="checkbox" id="checkbox1" />
+				    <label for="checkbox1">Envato Market</label>
+				  </div>
+				  <div class="check-wrap">
+				    <input type="checkbox" id="checkbox2" />
+				    <label for="checkbox2">What are you looking for?</label>
+				  </div>
+				  <a class="btn btn-dark">Keep in touch</a>
 				  </button>
 				</form>
 			</div>
@@ -296,7 +409,8 @@
 		<div class="contact-wrap">
 			<div class="contact-block">
 				<h4 class="contact-h">Postal Address</h4>
-				<h6>PO Box 16122 Collins Street West Victoria 8007 Australia</h6>
+				<h6>PO Box 16122 Collins Street West <br>
+				Victoria 8007 Australia</h6>
 			</div>
 
 			<div class="contact-block">
@@ -313,63 +427,78 @@
 		</div>
 	</section>
 
-	<section class="blog-section">
+	<section class="blog-section" id="blog">
 		<div class="social-block">
+			<a href="#"></a>
 			<i class="fab fa-facebook-f"></i>
 			<p>Follow us on Facebook</p>
 		</div>
 
 		<div class="social-block">
+			<a href="#"></a>
 			<i class="fab fa-twitter"></i>
 			<p>Follow us on Twitter</p>
 		</div>
 
 		<div class="social-block">
+			<a href="#"></a>
 			<i class="fab fa-behance"></i>
 			<p>Follow us on Behance</p>
 		</div>
 
 		<div class="social-block">
-			<i class="fab fa-dribbble-square"></i>
+			<a href="#"></a>
+			<i class="fab fa-dribbble"></i>
 			<p>Follow us on Dribbble</p>
 		</div>
 
 		<div class="social-block">
+			<a href="#"></a>
 			<i class="fab fa-google-plus-g"></i>
 			<p>Follow us on Google+</p>
 		</div>
 
 		<div class="social-block">
+			<a href="#"></a>
 			<i class="fab fa-wordpress"></i>
 			<p>Follow us on WordPress</p>
 		</div>
 	</section>
 
 	<footer class="main-footer">
-		<div class="lft-block">
-			<div class="footer-logo">
-				<img src="" alt="">
-				<h5 class="footer-logo">Cesis Creative</h5>
+		<div class="lft-rgt-wrap">
+			<div class="lft-block">
+				<div class="footer-logo-wrap">
+					<div class="footer-logo">
+						<img src="img/footer-logo.png" alt="">
+					</div>
+					<h5 class="footer-logo-text">Cesis Creative</h5>
+				</div>
+				<p>&copy 2015-2017 Tranmaytrilam Team. Cesis Creative demo for Cesis WordPress Theme.</p>
+				<ul class="footer-links">
+					<li><a href="">Twitter</a></li>
+					<li>.</li>
+					<li><a href="">Instagram</a></li>
+					<li>.</li>
+					<li><a href="">Dribbble</a></li>
+				</ul>
 			</div>
-			<p>&copy 2015-2017 Tranmaytrilam Team. Cesis Creative demo for Cesis WordPress Theme.</p>
-			<ul class="footer-links">
-				<li>Twitter</li>
-				<li>.</li>
-				<li>Instagram</li>
-				<li>.</li>
-				<li>Dribbble</li>
-			</ul>
-		</div>
 
-		<div class="rgt-block">
-			<h6>Subscribe Newsletter</h6>
-			<form action="post">
-
-			</form>
+			<div class="rgt-block">
+				<h6>Subscribe Newsletter</h6>
+				<form action="">
+					<div class="group">
+						<input type="email" placeholder="Enter your email" class="email">
+						<label><i class="fas fa-arrow-right"></i></label>
+						<span class="focus-border"></span>
+					</div>
+				</form>
+			</div>
 		</div>
+		<div class="footer-line"></div>
 	</footer>
 
-
+	<script src="libs/jquery.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
